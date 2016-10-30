@@ -10,7 +10,6 @@ tags: [GitHub,Git]
 + 2、fork的项目 和 自己新建的项目 的区别，可以和第1点一起理解
 + 3、更新到本地（commit） 和 推送到远程仓库（push） 的区别
 + 4、fetch 和 pull 的区别
-+
 
 ## 命令行
 
@@ -26,7 +25,7 @@ $ git remote add upsteam https//github.com/xxx/xxx.git
 //upsteam 为分支的名字
 ```
 
-`这里需要理解 upsteam 和 origin 的区别`
+**这里需要理解 upsteam 和 origin 的区别
 
 #### 更新分支到本地，得与 fetch 做区别
 ```
@@ -37,7 +36,7 @@ $ git remote update
 ```
 $ git fetch upsteam
 ```
-`这里要理解 fetch 和 pull 的区别：两个都是相当于update代码。但 fetch 是不自动覆盖代码，而 pull 会自动覆盖掉`
+**这里要理解 fetch 和 pull 的区别：两个都是相当于update代码。但 fetch 是不自动覆盖代码，而 pull 会自动覆盖掉
 
 #### 切换到本地 master 分支
 ```
@@ -54,13 +53,13 @@ $ git rebase upsteam/master
 ```
 $ git merge upsteam/master
 ```
-`保持良好的习惯，请先fetch了别人的最新的代码，再去把自己的代码和别人的合并！！`
+**保持良好的习惯，请先fetch了别人的最新的代码，再去把自己的代码和别人的合并！！
 
 #### 配置用户名和邮箱
 配置提交时默认使用的用户名和邮箱
 ```
-$ git config --global user.name 'your name'
-$ git config --global user.email 'your email'
+$ git config --global user.name "your name"
+$ git config --global user.email "your email"
 ```
 
 #### 新建repository初始化
@@ -78,11 +77,11 @@ $ git status
 $ git add .
 $ git add readme.md
 ```
-`注意这里是add 后面有个 . 小数点，意思是提交全部修改的文件`
+**注意这里是add 后面有个 . 小数点，意思是提交全部修改的文件
 
 #### 提交
 ```
-$ git commit -m '注释内容'
+$ git commit -m "注释内容"
 ```
 
 #### 推送到远端仓库 origin 的 master 分支
@@ -90,8 +89,8 @@ $ git commit -m '注释内容'
 $ git push origin master
 $ git push -u origin master
 ```
-`这一步是指真正的上传，不是commit的提交到本地而已。做这一步，需要保证origin是指向你的本地仓库，要和 upsteam 区别哦；如果没有分支的话，就使用 git remote add origin xxxxx 为项目配置分支`
-`需要理解 -u 的含义`
+**这一步是指真正的上传，不是commit的提交到本地而已。做这一步，需要保证origin是指向你的本地仓库，要和 upsteam 区别哦；如果没有分支的话，就使用 git remote add origin xxxxx 为项目配置分支。
+**需要理解 -u 的含义
 
 #### 查看日志
 ```
@@ -126,12 +125,10 @@ $ git branch -d myBranch
 #### 删除这个项目
 Setting -- Delete this repository
 
-####
-
 #### Git的SSH远程访问的方法：
 1、首先在本地创建SSH KEY:
 ```
-$ ssh-keygen -t rsa -C 'your email address'
+$ ssh-keygen -t rsa -C "your email address"
 ```
 后面的邮箱地址改为你的邮箱地址，之后会要求确认路径和输入密码，这里一直使用回车就行了，成功的话会在~/下生成.ssh文件夹，进去，打开id_rsa.pub，复制里面的key。
 
@@ -160,6 +157,8 @@ $ which git
 ```
 
 **参考网址：**
-[https://segmentfault.com/a/1190000003703918](https://segmentfault.com/a/1190000003703918)
-[http://blog.csdn.net/dongdongdongjl/article/details/8565330](http://blog.csdn.net/dongdongdongjl/article/details/8565330)
-[怎样在github上协同开发](http://blog.csdn.net/koffuxu/article/details/39010803)
++ [https://segmentfault.com/a/1190000003703918](https://segmentfault.com/a/1190000003703918)
+
++ [http://blog.csdn.net/dongdongdongjl/article/details/8565330](http://blog.csdn.net/dongdongdongjl/article/details/8565330)
+
++ ````[怎样在github上协同开发](http://blog.csdn.net/koffuxu/article/details/39010803)
