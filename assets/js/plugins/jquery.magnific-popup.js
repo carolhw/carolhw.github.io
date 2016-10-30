@@ -1577,10 +1577,10 @@ $.magnificPopup.registerModule(IFRAME_NS, {
 					'<iframe class="mfp-iframe" src="//about:blank" frameborder="0" allowfullscreen></iframe>'+
 				'</div>',
 
-		srcAction: 'iframe_src',
+		srcAction: 'iframe_src'
 
 		// we don't care and support only one default type of URL by default
-		patterns: {
+/*		patterns: {
 			youtube: {
 				index: 'youtube.com', 
 				id: 'v=', 
@@ -1595,7 +1595,7 @@ $.magnificPopup.registerModule(IFRAME_NS, {
 				index: '//maps.google.',
 				src: '%id%&output=embed'
 			}
-		}
+		}*/
 	},
 
 	proto: {
@@ -1617,9 +1617,9 @@ $.magnificPopup.registerModule(IFRAME_NS, {
 			_mfpOn(CLOSE_EVENT + '.' + IFRAME_NS, function() {
 				_fixIframeBugs();
 			});
-		},
+		}
 
-		getIframe: function(item, template) {
+		/*getIframe: function(item, template) {
 			var embedSrc = item.src;
 			var iframeSt = mfp.st.iframe;
 				
@@ -1646,7 +1646,7 @@ $.magnificPopup.registerModule(IFRAME_NS, {
 			mfp.updateStatus('ready');
 
 			return template;
-		}
+		}*/
 	}
 });
 
