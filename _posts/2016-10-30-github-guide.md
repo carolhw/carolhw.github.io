@@ -12,6 +12,8 @@ tags: [GitHub,Git]
 + 3、更新到本地（commit） 和 推送到远程仓库（push） 的区别
 + 4、fetch 和 pull 的区别
 
+<!--more-->
+
 ## 命令行
 
 #### 查看远端先有分支
