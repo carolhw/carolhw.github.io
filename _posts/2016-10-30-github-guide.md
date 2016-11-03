@@ -5,6 +5,26 @@ description: "Some command about github's operation"
 tags: [GitHub,Git]
 ---
 
+==2016/11/13 更新=================================================
+
+因为最近在做一个小外快，因为是后台搭建的TFS，这个地址在公司无法打开，所以我唯有把平时在公司有空时做的自己的项目放到OSC上面，然后给自己本地新增多一个远端分支，每次如果有修改的话，就提交到2个远端（OSC、TFS）
+
+```
+// 先进入代码目录 wcode
+// 然后进行新增分支
+
+$ git remote add git-tfs http://xxx.com:80/wcode.git
+//这一步是查看有没有新增成功,成功的话应该会显示 git-tfs 的信息。
+$ git remote -v
+
+//然后进行 status --> add --> commit ，就可以push到tfs上的仓库了,OSC的同理，假如OSC的是origin
+$ git push git-tfs master
+$ git push origin master
+```
+
+
+==正文开始=================================================
+
 **注意几个要点：**
 
 + 1、origin 、 upsteam的区别
@@ -196,3 +216,5 @@ $ which git
 + [http://blog.csdn.net/dongdongdongjl/article/details/8565330](http://blog.csdn.net/dongdongdongjl/article/details/8565330)
 
 + [怎样在github上协同开发](http://blog.csdn.net/koffuxu/article/details/39010803)
+
++ [如何导入外部Git仓库到OSC](http://www.oschina.net/question/82993_133520)
