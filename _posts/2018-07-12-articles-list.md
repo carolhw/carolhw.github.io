@@ -33,18 +33,22 @@ tags: [interview]
   - 1、HTTP/TCP/IP
   - 2、Node创建TCP服务
   - 3、WebSocket通讯
+  - 4、express
+  - 5、MongoDB
 - MVVM
   - Tools
     - 1、vue-router
     - 2、schema
     - 3、jsdoc
     - 4、babel
-    - 5、webpack
+    - 5、mockjs
+    - 6、webpack
   - Vue
     - 1、vue-cli
 - Test
   - karma
   - mocha
+  - jasmine
 - Tools
   - 1、git
   - 2、utils--项目常用效果整理
