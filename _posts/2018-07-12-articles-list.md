@@ -31,7 +31,7 @@ tags: [interview]
     - 2、滚动翻页
     - 3、右键菜单
 - Node
-  - 1、HTTP/TCP/IP
+  - 1、HTTP/TCP/IP,SSL
   - 2、Node创建TCP服务
   - 3、WebSocket通讯
   - 4、express
@@ -44,12 +44,13 @@ tags: [interview]
     - 3、jsdoc
     - 4、babel
     - 5、mockjs
-    - 6、webpack
+    - 6、webpack/fis
   - Vue
     - 1、vue-cli
   - React
     - 全家桶
   - Native App
+    - react native
 - Test
   - karma
   - mocha
@@ -61,7 +62,11 @@ tags: [interview]
   - 1、iconfont
   - 2、elementUI
   - 3、layUI
+  - 4、weex
+  - 5、rax
 - Others
+  - 框架
+    - koa
   - 图表类
     - 1、echarts效果
     - 2、gojs效果
