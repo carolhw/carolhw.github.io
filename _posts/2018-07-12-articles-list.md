@@ -31,7 +31,7 @@ tags: [interview]
     - 2、滚动翻页
     - 3、右键菜单
 - Node
-  - 1、HTTP/TCP/IP,SSL
+  - 1、HTTP/TCP/IP,SSL,缓存策略,浏览器渲染及网络传输过程
   - 2、Node创建TCP服务
   - 3、WebSocket通讯
   - 4、express
@@ -67,10 +67,17 @@ tags: [interview]
 - Others
   - 框架
     - koa
+    - [pwa](https://juejin.im/post/5a9e8ad5f265da23a40456d4)
   - 图表类
     - 1、echarts效果
     - 2、gojs效果
   - 网页小工具
     - 1、截图
     - 2、打印
+  - 构建工具
+    - Grunt
+    - Gulp
+  - 调试工具
+    - vue-tools
+    - chrome timeline,tracing
 
